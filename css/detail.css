@@ -1,0 +1,628 @@
+#detail{
+	flex:1;
+	background:#fff;
+	flex-direction:column;
+	overflow:hidden;
+}
+#detail header{
+	position:relative;
+	flex:none;
+
+}
+#detail .aStore{
+	width:100%;
+	padding:0.426667rem 0 0.768rem 0.64rem;
+	box-sizing:border-box;
+	display:flex;
+	background:silver;
+	border-bottom:1px dashed #fff;
+	background: rgba(119,103,137,.43);
+}
+#detail .left{
+	float:left;
+}
+#detail .right{
+	float:right;
+}
+#detail .leftWrap{
+	flex:none;
+	width:2.56rem;
+	height:2.56rem;
+}
+#detail .leftWrap img{
+	width:100%;
+	height:100%;
+	border-radius:0.313333rem;
+	border:1px solid silver;
+	box-sizing:border-box;
+}
+#detail .rightWrap{
+	flex:1;
+	display:block;
+	height: 2.56rem;
+	overflow:hidden;
+	padding-left:0.426667rem;
+	box-sizing:border-box;
+	flex-direction: column;
+	font-size:.293333rem;
+	color:#fff;
+}
+
+#detail .title{
+	font-size:0.682667rem;
+	font-weight:700;
+	width:70%;
+	height:0.853333rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#fff;
+}
+#detail .rightWrap p{
+	height:0.853333rem;
+	line-height:0.853333rem;
+	box-sizing:border-box;
+	font-size:0.512rem;
+	padding:0;
+}
+#detail .rightWrap .length{
+	flex:1;
+}
+#detail .Separate{
+	padding:0 0.042667rem;
+}
+#detail .star{
+	color:#fff;
+}
+#detail .time{
+	color:#fff;
+}
+.activities{
+	flex-direction:column;
+	position:relative;
+}
+.activities dl{
+	display: block;
+	overflow:hidden;
+	height:0.8rem;
+	line-height: 0.8rem;
+}
+.activities dl dt,.activities dl dd{
+	float:left;	
+	font-family:Microsoft Yahei;
+}
+.activities dl dt{
+	display:block;
+    width: 0.554667rem;
+    height: 0.554667rem;
+    font-size: 0.512rem;
+    color: #fff;
+    margin-top:0.12rem;
+    line-height: 0.554667rem;
+    border-radius: 0.042667rem;
+    margin-right: 0.213333rem;
+}
+.activities dl dd{
+	font-size:0.512rem;
+	width:68%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.activities_num{
+	flex:none;
+	font-family:Microsoft Yahei;
+	font-size:0.512rem;
+	line-height: 0.55rem;
+	background:rgba(0,0,0,0.3);
+	border-radius: .266667rem;
+	padding:0.1rem 0.206667rem;
+	color:#eee;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.promotion_info{
+	width:100%;
+	height:0.768rem;
+	position:absolute;
+	bottom:0;
+	background:rgba(0,0,0,0.3);
+	box-sizing:border-box;
+}
+.promotion_info dl{
+	width:100%;
+	display:flex;
+}
+.promotion_info dl dt{
+	flex:none;
+	height:0.554667rem;
+	font-size:0.512rem;
+	color:#666;
+	background:rgba(255,255,255,0.8);
+	border-radius:0.106667rem;
+	padding:0 0.106667rem;
+	margin:0 0.32rem;
+	margin-top:0.106667rem;
+	line-height:0.554667rem;
+}
+.promotion_info dl dd{
+	flex:none;
+	width:80%;
+	color:#eee;
+	font-size:0.512rem;
+	line-height:0.768rem;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.promotion_info dl .activities_tips_button{
+	position:absolute;
+	right:0.213333rem;
+	top:0;
+	width:0.426667rem;
+}
+.container{
+	flex:1;
+	width:100%;
+	overflow:hidden;
+	display:flex;
+	flex-direction:column;
+	position:relative;
+}
+.container header{
+	flex:none;
+	width:100%;
+	height:1.28rem;
+	display:flex;
+	font-size:0.597333rem;
+	color:#666;
+	padding:0.213333rem 0;
+	box-shadow:0 0 0.06667rem silver;
+}
+.container header p{
+	flex:1;
+	line-height:1.28rem;
+	text-align:center;
+	position:relative;
+}
+.container header .index{
+	color:orange;
+}
+.container header .index::after{
+	content:"";
+	position:absolute;
+	width:1.5rem;
+	height:2px;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	background:orange;
+}
+.storeIn_list{
+	flex:1;
+	width:100%;
+	display:flex;
+	overflow:hidden;
+}
+#typeScrollWrap{
+	width:22%;
+	flex:none;
+	position:relative;
+	overflow:hidden;
+}
+.type_list{
+	width:100%;
+	font-size:0.55333rem;
+	background:#efefef;
+	color:#666;
+	position:relative;
+	bottom:0;
+}
+.type_list li{
+	padding:0.64rem 0.213333rem 0.64rem 0.413333rem;
+	border-bottom:1px dashed #fff;
+	box-sizing:border-box;
+	font-weight:600;
+	position:relative;
+}
+.typeNum{
+	position:absolute;
+	right:0;
+	top:0;
+	width:0.768rem;
+	height:0.768rem;
+	border-radius:50%;
+	background:orange;
+	color:maroon;
+	font-size:0.597333rem;
+	text-align:center;
+	line-height:0.768rem;
+	display:none;
+}
+.goods_list{
+	flex:1;
+	position:relative;
+	bottom:0;
+}
+.goods_list>li{
+	width:100%;
+}
+.goods_list ol li:last-child,.type_list li:last-child{
+	border-bottom:0;
+}
+.goods_list>li h2{
+	width:100%;
+	padding:0.426667rem;
+	box-sizing:border-box;
+	color:#666;
+	font-size:0.582667rem;
+	font-weight: bold;
+	background:#efefef;
+	border-left:1px dashed #fff;
+}
+.goods_title_icon{
+	float:right;
+	margin-top:0.2rem;
+	color:#666;
+}
+.goods_list>li ol{
+	width:100%;
+	padding:0.426667rem 0.426667rem;
+	box-sizing:border-box;
+	padding-bottom:0;
+	border:1px dashed #efefef;
+}
+.goods_list>li ol li{
+	width:100%;
+	display:flex;
+	padding:0.426667rem 0;
+	border-bottom:1px dashed silver;
+}
+.goods_list>li ol li:first-child{
+	padding-top:0;
+}
+.good_logo{
+	flex:2;
+}
+.good_detail{
+	flex:8;
+	position:relative;
+}
+.good_detail h3{
+	width:100%;
+	padding:0 0 0.426667rem 0.426667rem;
+	font-size:0.682667rem;
+	font-weight:bolder;
+	box-sizing:border-box;
+}
+.good_detail p{
+	padding:0 0 0.426667rem 0.426667rem;
+	font-size:0.512rem;
+	font-family:Microsoft Yahei;
+	color:#666;
+}
+.singlePrice{
+	padding-left:0.426667rem;
+	font-size:0.682667rem;
+	color:orange;
+	font-weight:bolder;
+}
+.singlePrice::before{
+	content:"¥";
+	font-size:0.512rem;
+	font-family:Microsoft Yahei;
+	color:orange;
+}
+.addButton,.shiftButton{
+	width:1.2rem;
+	height:1.2rem;
+	border-radius: 50%;
+	background:orange;
+	text-align:center;
+	line-height:1.2rem;
+	color:#fff;
+	font-size:0.82667rem; 
+}
+#ollistScroll{
+	width:100%;
+	position:relative;
+	overflow: hidden;
+}
+.type_list .indexType{
+	border-left:0.170667rem solid orange;
+	box-sizing:border-box;
+	padding-left:0.326667rem;
+}
+
+/* 购物车 */
+.shopCar{
+	flex:none;
+	width:100%;
+	height:2.133333rem;
+	background:rgba(50,50,50,0.9);
+	color:#fff;
+	display:flex;
+	box-shadow:0 0 -0.106667rem rgba(50,50,50,0.9);
+	position:relative;
+	z-index:300000;
+}
+.shopCar dt{
+	flex:7;
+	display:flex;
+}
+.shopCar dd{
+	flex:3;
+}
+.theCarIcon{
+	flex:none;
+	width:2.133333rem;
+	height:2.133333rem;
+	background:#fff;
+	margin:0 0.553333rem;
+	border:0.213333rem solid rgba(50,50,50,0.9);
+	border-radius:50%;
+	position:relative;
+	z-index:220000;
+	top:-0.64rem;
+	box-shadow:0 0 0.106667rem rgba(50,50,50,0.9);
+	color:orange;
+	text-align:center;
+	font-size:1.28rem;
+	line-height:2.133333rem;
+	background:#efefef;
+}
+.allGoodNum{
+	position:absolute;
+	right:0;
+	top:-0.213333rem;
+	width:0.682667rem;
+	height:0.682667rem;
+	font-size:0.597333rem;
+	text-align:center;
+	line-height: 0.682667rem;
+	color:#fff;
+	background:maroon;
+	border-radius:50%;
+	display:none;
+}
+.iconJump{
+	animation:jump 0.5s 0s ease-in-out;
+}
+@keyframes jump{
+	0%{
+		transform:scale(1.1);
+	}
+	35%{
+		transform:scale(1);
+	}
+	65%{
+		transform:scale(1.1);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+.allPrice{
+	padding-top:0.106667rem;
+}
+.allPrice::before{
+	content:'¥';
+	font-family:Microsoft Yahei;
+	font-size:0.554667rem;
+	padding-right:0.213333rem;
+}
+.sendPrice{
+	font-size:0.512rem;
+}
+.sendPrice::before{
+	content:'配送费¥';
+	font-family:Microsoft Yahei;
+}
+.Crount{
+	background:orange;
+	font-size:0.682667rem;
+	color:#333;
+	text-align:center;
+	font-family:Microsoft Yahei;
+	line-height:2.133333rem;
+	font-weight:bold;
+}
+.shopCar .empety{
+	background:#666;
+	color:silver;
+}
+
+.crountWrap{
+	display:flex;
+	position:absolute;
+	right:0;
+	bottom:0.106667rem;
+}
+.crountNum{
+	font-size:0.682667rem;
+	padding:0 0.413333rem;
+	line-height:1.2rem;
+	color:#666;
+}
+.shiftButton{
+	display:none;
+	background:#efefef;
+	color:orange;
+}
+.crountNum{
+	display:none;
+}
+.shopCarList{
+	width:100%;
+	position:fixed;
+	bottom:2.133333rem;
+	background:#efefef;
+	z-index:100001;
+	max-height:50%;
+	transition:all 0.5s 0s ease-in-out;
+	transform:translate(0,100%);
+}
+
+.showShopCarList{
+	transform:translate(0,0);
+}
+.shopCarList dt{
+	font-size:0.682667rem;
+	box-shadow:0 0 0.106667rem silver;
+	padding:0.426667rem;
+	box-sizing:border-box;
+	color:#666;
+	overflow:hidden;
+}
+.clearButton{
+	float:right;
+	font-family:Microsoft Yahei;
+	font-size:0.597333rem;
+}
+.carListTitle{
+	padding-left:0.426667rem;
+	font-family:Microsoft Yahei;
+	position:relative;
+}
+.carListTitle::before{
+	position:absolute;
+	content:'';
+	left:-0rem;
+	top:0;
+	bottom:0;
+	margin:auto;
+	height:0.768rem;
+	width:0.128rem;
+	background:orange;
+}
+.clearButton{
+
+}
+.clearButton:after{	
+	font-family:Microsoft Yahei;
+	font-size:0.597333rem;
+	content:'清空';
+	padding-left:0.213333rem;
+}
+.shopCarList dd{
+	margin:0 0.426667rem;
+	border-bottom:1px dashed #bbb;
+	padding:0.426667rem 0;
+	box-sizing:border-box;
+	font-size:0.682667rem;
+	display:flex;
+	position:relative;
+}
+.shopTitle{
+	flex:6;
+	color:#444;
+}
+.typePrice{
+	flex:4;
+	color:#444;
+}
+.typePrice::before{
+	content:'¥';
+	font-family:Microsoft Yahei;
+}
+.shopCarList .crountWrap{
+	flex:none;
+	right:0;
+	top:50%;
+	margin-top:-0.6rem;
+}
+.shopCarList .crountNum{
+	display:block;
+}
+.shopCarList .shiftButton{
+	display:block;
+	border:1px solid orange;
+}
+#shopListScroll{
+	position:relative;
+	max-height:12.5rem;
+	overflow:hidden;
+}
+
+/* 活动模块 */
+.activityBox{
+	position:absolute;
+	top:0;
+	z-index:600000;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.9);
+	color:#eee;
+	font-size:0.512rem;
+	padding:1.28rem;
+	box-sizing:border-box;
+	display:none;
+}
+.activityBox h2{
+	padding:0.213333rem 0;
+	text-align:center;
+	font-size:0.768rem;
+}
+.ResStar{
+	text-align:center;
+	font-size:0.341333rem;
+	color:orange;
+}
+.activityBox dt{
+	background: -webkit-gradient(linear,left top,right top,from(#555));
+	background-position: 50%;
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+}
+.activityBox dt span{
+	font-size:0.512rem;
+	padding:0.15rem;
+	display:block;
+	border:1px solid #888;
+	width:2.533333rem;
+	margin:1.28rem auto;
+	margin-bottom:0.6rem;
+	border-radius:0.64rem;
+	text-align:center;
+	background:#000;
+}
+.activityBox dd{
+	line-height:1.152rem;
+	display:flex;
+}
+.activityBox dd span{
+	display:block;
+	flex:none;
+	width:0.554667rem;
+	height:0.554667rem;
+	font-size:0.512rem;
+	color:#fff;
+	margin: auto 0;
+	background:red;
+	line-height:0.554667rem;
+	border-radius:0.042667rem;
+	margin-right:0.213333rem;
+}
+.closeActButton{
+	width:1.706667rem;
+	height:1.706667rem;
+	font-size:1.024rem;
+	position:absolute;
+	bottom:0.853333rem;
+	left:0;
+	right:0;
+	margin:auto;
+	text-align:center;
+	border-radius:50%;
+	border:1px dashed #eee;
+	line-height:1.706667rem;
+}
+.activityBoxHide{
+	animation:fadeOut 0.5s 0s ease-in-out forwards;
+}
+.activityBoxIn{
+	animation:fadeIn 0.5s 0s ease-in-out forwards;
+}
+a{}

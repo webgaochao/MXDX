@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ele</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<!-- <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/city.css">
+	<link rel="stylesheet" href="css/address.css">
+	<link rel="stylesheet" href="css/detail.css"> -->
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/pace.css">
+	<script>
+		window.paceOptions = {
+		  // Disable the 'elements' source
+		  elements: false,
+		  // Only show the progress on regular and ajax-y page navigation,
+		  // not every request
+		  restartOnRequestAfter: false
+		}
+	</script>
+	<script src="plugin/pace.min.js"></script>
+</head>
+<body>
+	<section id="all_Section_Wrap">
+		<section id="city">
+			<section id="cityBox">
+				<article class="Location">
+					<aside class="current_locationTitle">
+						<p class="left_text">当前定位城市</p>
+						<p class="right_text">定位不准确，请在城市列表中选择</p>
+					</aside>
+					<aside class="current_location">上海</aside>
+				</article>
+				<article class="hot_city"></article>
+				<article class="allcity"></article>
+				<article class="floor"></article>
+			</section>
+		</section>
+		<section id="address">
+			<section class="addressBox">
+				<header>
+					<i class="back"><</i>
+					<span class="inThisCity">读取城市中..</span>
+					<span class="otherCity">切换城市</span>
+				</header>
+				<article class="searchBox">
+					<input type="input" required="required" placeholder="输入学校，商务楼，地址" name="keyword" class="keyword">
+					<input type="button" value="搜索" class="searchbotton" name="search">
+				</article>	
+				<article class="addressList"></article>		
+			</section>
+		</section>
+		<section id="home">
+			<header>
+				<i class="fa fa-search"></i>
+				<span class="home_address">读取地址中..</span>
+				<span class="signIn_button">登录</span>
+			</header>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide type_listFir"></div>
+			        <div class="swiper-slide type_listSec"></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    <!-- 如果需要导航按钮 -->
+			    <!-- <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div> -->
+			    <!-- 如果需要滚动条 -->
+			    <!-- <div class="swiper-scrollbar"></div> -->
+			</div>
+			<section class="home_storeList">
+				<header>
+					<i class="fa fa-anchor"></i><span>附近商家</span>
+				</header>
+			</section>
+		</section>
+		<section id="detail">
+			<header>
+				<article class="aStore">
+					<aside class="leftWrap">
+						<img  src="https://fuss10.elemecdn.com/3/0d/90c91aafa37de8ec0488c731c2deejpeg.jpeg" alt="">
+					</aside>
+					<aside class="rightWrap">
+						<h4>
+							<span class="title"></span>
+						</h4>
+						<p>
+							<span>商家配送</span>
+							<span class="Separate">/</span>
+							<span class="time">分钟送达</span>
+							<span class="Separate">/</span>
+							配送费<span class="float_delivery_fee">9</span>元
+						</p>
+						<div class="activities">
+							<!-- <dl>
+								<dt class="activities_icon">减</dt>
+								<dd class="activities_tips">满45元减12元</dd>
+							</dl> -->
+							<span class="activities_num"><span>1</span>个活动&nbsp;<i class="fa fa-chevron-down"></i></span>
+						</div>
+					</aside>
+				</article>
+				<aside class="promotion_info">
+					<dl>
+						<dt class="promotion_icon">公告</dt>
+						<dd class="promotion_text">欢迎光临，用餐高峰期请提前下单，谢谢。</dd>
+						<dd class="activities_tips_button fa fa-arrow-right"></dd>
+					</dl>
+				</aside>
+			</header>
+			<article class="container">
+				<header>
+					<p class="index">商品</p>
+					<p>店铺</p>
+				</header>
+				<section class="storeIn_list">
+					<div id="typeScrollWrap">
+						<ul class='type_list'>
+						<!-- 	<li>精品推荐</li>
+							<li>纯珍9寸披萨</li>
+							<li>纯珍9寸披萨</li>
+							<li>纯珍9寸披萨</li>-->
+						</ul> 
+					</div>
+					<div id="ollistScroll">
+						<ul class="goods_list">
+						<!--<li>
+							<h2>新品推荐<i class="goods_title_icon fa fa-server"></i></h2>
+							<ol>
+								 <li>
+									<aside class="good_logo">
+										<img src="https://fuss10.elemecdn.com/4/a7/8a3ef37366d822edfeab847bd15dajpeg.jpeg?imageMogr/thumbnail/140x140/format/webp/quality/85" alt="">	
+									</aside>
+									<aside class="good_detail">
+										<h3>热情羊溢烤串(2串)</h3>
+										<p>选用源自锡盟草原的羔羊肉，经孜然风味腌料腌渍后烤制，再撒上气味芳香浓烈的孜然粉，立即演绎出大草原般健康活力！热情满溢，一吃就燃！</p>
+										<p><span>月售5份&nbsp;好评率100%</span></p>
+										<span class="singlePrice">14</span>
+										<div class="addButton">+</div>
+									</aside>
+								</li>
+								<li>
+									<aside class="good_logo">
+										<img src="https://fuss10.elemecdn.com/4/a7/8a3ef37366d822edfeab847bd15dajpeg.jpeg?imageMogr/thumbnail/140x140/format/webp/quality/85" alt="">	
+									</aside>
+									<aside class="good_detail">
+										<h3>热情羊溢烤串(2串)</h3>
+										<p>选用源自锡盟草原的羔羊肉，经孜然风味腌料腌渍后烤制，再撒上气味芳香浓烈的孜然粉，立即演绎出大草原般健康活力！热情满溢，一吃就燃！</p>
+										<p><span>月售5份&nbsp;好评率100%</span></p>
+										<span class="singlePrice">14</span>
+										<div class="addButton">+</div>
+									</aside>
+								</li> 
+							</ol>
+						</li>-->
+						</ul>
+					</div>
+				</section>
+			</article>
+			<dl class="shopCar">
+				<dt>
+					<div class="theCarIcon empety">
+						<i class="fa fa-shopping-basket"></i>
+						<div class="allGoodNum">0</div>
+					</div>
+					<div class>
+						<p class="allPrice">0</p>
+						<p class="sendPrice">5</p>
+					</div>
+				</dt>
+				<dd class="Crount">去结算</dd>
+			</dl>
+			<dl class="shopCarList">
+				<dt>
+					<span class="carListTitle">购物车</span>
+					<span class="clearButton fa fa-trash"></span>
+				</dt>
+				<article id="shopListScroll">
+					<article class="carListWrap">
+						
+					</article>
+				</article>
+				<!-- <dd>
+					<span class="shopTitle">变态辣中翅</span>
+					<span class="typePrice">10</span>
+					<div class="crountWrap">
+						<div class="shiftButton">-</div>
+						<span class="crountNum">1</span>
+						<div class="addButton">+</div>
+					</div>
+				</dd> -->
+			</dl>
+			<div class="activityBox">
+				<i class="closeActButton fa fa-close fa-3x"></i>
+				<h2>汉堡王（五角场万达店)</h2>
+				<div class="ResStar">五个星星</div>
+				<dl>
+					<dt><span>优惠信息</span></dt>
+					<dd><span>减</span>在线支付满45减5，满85减10</dd>
+					<dd>(不与其他活动同享)新用户下单立减10.0元</dd>
+				</dl>
+				<dl>
+					<dt><span>商家公告</span></dt>
+					<dd>欢迎光临，用餐高峰期请提前下单，谢谢。</dd>
+				</dl>
+			</div>
+		</section>
+	</section>
+	<script>
+		function store(name,obj){
+			if(obj){
+				return sessionStorage.setItem(name,JSON.stringify(obj))
+			}else{
+				return JSON.parse(sessionStorage.getItem(name))||null
+			}
+		}//本地存储
+		function selector(type,all){
+			if(all==='all'){
+				return document.querySelectorAll(type);
+			}
+			return document.querySelector(type);
+		}//选择器
+		//  获取地理位置！！
+        /*if(navigator.geolocation){  
+            navigator.geolocation.getCurrentPosition(getPositionSuccess, getPositionError);  
+        }else{  
+            alert("您的浏览器不支持Geolocation!");  
+        } */
+       	function getPositionSuccess(position){  
+		    var lat = position.coords.latitude;  
+		    var lng = position.coords.longitude;  
+		    //document.write("所在位置： 经度(" + lat + ")，纬度(" + lng + ")");  
+		    if(typeof position.address !== "undefined"){  
+		        var country = position.address.country;  
+		        var province = position.address.region;  
+		        var city = position.address.city;  
+		        /*document.write("<br />");  
+		        document.write("您位于" + country + province + city);  */
+		    }  
+		} 
+        /*function getPositionError(error){  
+		    switch(error.code){  
+		        case error.TIMEOUT:  
+		            alert("连接超时，请重试");  
+		            break;  
+		        case error.PERMISSION_DENIED:  
+		            alert("您拒绝了使用位置共享服务，查询已取消");  
+		            break;  
+		        case error.POSITION_UNAVAILABLE:  
+		            alert("非常抱歉，我们暂时无法为您所在的星球提供位置服务");  
+		            break;  
+		    }  
+		}*/
+	</script>
+	<script src="plugin/zepto.js"></script>
+	<script src="plugin/rem.js"></script>
+	<script src="plugin/director.js"></script>
+	<script src="plugin/iscroll.js"></script>
+	<script src="plugin/swiper-3.3.1.jquery.min.js"></script>
+	<script>
+    	var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        effect: 'flip',
+	        grabCursor: true,
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev'
+	    });
+	    $('#home').css({display:'none'});
+	</script>
+	<!-- <script src="module/home.js"></script>
+	<script src="module/city.js"></script>
+	<script src="module/address.js"></script>
+	<script src="module/detail.js"></script>	
+	<script src="module/route.js"></script>
+	<script src="module/index.js"></script> -->
+	<script src="module/dist/didiAll.js"></script>
+</body>
+</html>
